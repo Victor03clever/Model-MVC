@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clever</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- onload="load()" -->
+    <header class="header ">
+        <a href="#"><img src="./img/Logo_cleveer.png" alt="logo" width="50"></a>
+        <div class="burger" id="burger" onclick="activeburger()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav id="nav">
+            <ul class="link">
+
+                <li class="home">
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+
+                <li class="service">
+                    <a href="#service">
+                        Services
+                    </a>
+                </li>
+
+
+                <li class="contacts">
+                    <a href="#contacts">
+                        Contact
+                    </a>
+                </li>
+
+
+                <li class="about">
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner" id="home">
+            <div id="container">
+
+                <h1 class="span one">Feels Design in your Skin</h1>
+                <p class="span two">I'm Victor Clever</p>
+                <a href="#" class="btn"><span class="bt"></span> Portifolio</a>
+                <a href="#" class="btn"><span class="bt"></span> Contact-me</a>
+            </div>
+        </section>
+
+
+
+
+        <section class="services" id="service">
+            <h1 class="title">SERVICES</h1>
+            <p class="title1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, natus Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Iure recusandae animi nihil quibusdam hic quam amet, eos
+                nobis at explicabo, quasi cumque, natus ipsa distinctio cupiditate ut vel rerum architecto.
+            </p>
+            <div id="cards">
+                <div id="card">
+                    <h4> Programer</h4>
+                    <img src="./img/developer.png" width="40" alt="icone de programação">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, error dolor ea exercitationem
+                        eligendi id.
+                    </span>
+                </div>
+                <div id="card">
+                    <h4>Design</h4>
+                    <img src="./img/design.png" width="40" alt="design">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, error dolor ea exercitationem
+                        eligendi id.
+                    </span>
+                </div>
+                <div id="card">
+                    <h4>Photograph</h4>
+                    <img src="./img/cameras.png" width="40" alt="icone fotografia">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, error dolor ea exercitationem
+                        eligendi id.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contacts">
+            <h1 class="title">CONTACT</h1>
+            <!-- <div id="iframe"> -->
+            <iframe id="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13651.45302756153!2d13.38287880736602!3d-8.78032797165449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51fb9cc8ea3e0f%3A0xca054395a30055a5!2sI-Byte%20OtM%20Lda!5e0!3m2!1spt-PT!2sao!4v1667322921960!5m2!1spt-PT!2sao"
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- </div> -->
+            <div id="infoform">
+                <div id="info">
+                    <div class=" info adress">
+                        <figcaption><img src="./img/adress.png" width="20" alt="gps"></figcaption>
+                        <h4>Location</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class=" info email">
+                        <figcaption><img src="./img/email.png" width="20" alt="gps"></figcaption>
+                        <h4>Email</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class=" info phone">
+                        <figcaption><img src="./img/phone.png" width="20" alt="gps"></figcaption>
+                        <h4>Phone</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div id="form">
+                    <form action="" method="post">
+                        <input type="text" name="nome" class="input" placeholder="Your name"><br>
+                        <input type="text" name="phone" class="input" placeholder="Your phone number"><br>
+                        <input type="text" name="email" class="input" placeholder="Your email"><br>
+                        <textarea name="message" placeholder="Message" rows="5"></textarea><br>
+                        <button type="submit" class="button1" name="submit"><span class="bt"></span>Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about"></section>
+
+
+    </main>
+</body>
+<script>
+    window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        header.classList.toggle("nova", window.scrollY > 200);
+
+    })
+    function activeburger() {
+        var nav = document.getElementById("nav");
+        var burger = document.getElementById("burger");
+        nav.classList.toggle("active");
+        burger.classList.toggle("active");
+    }
+    // function activenav() {
+    //     var nav = document.querySelector("li");
+    //     nav.classList.toggle("active");
+    // }
+
+
+</script>
+
+</html>
